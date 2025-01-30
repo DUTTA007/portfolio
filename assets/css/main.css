@@ -1617,26 +1617,19 @@ input, select, textarea {
 
 /* Image */
 
-
-	.image {
-		display: block;
-		position: relative;
-		max-width: 100%;
-		text-align: center; /* Ensures centering */
-	}
+.image {
+	display: inline-block;
+	position: relative;
+}
 
 	.image img {
 		display: block;
-		max-width: 100%;
-		height: auto;
-		margin: 0 auto;
+		width: 100%;
 	}
 
-	.image.fit img {
-		width: auto;
-		max-width: 100%;
-		height: auto;
-		object-fit: contain; /* Ensures entire image is visible */
+	.image.fit {
+		display: block;
+		width: 100%;
 	}
 
 	.image.featured {
@@ -1652,14 +1645,14 @@ input, select, textarea {
 
 	.image.centered {
 		display: block;
-		text-align: center; /* Centers the image inside the div */
+		margin: 0 0 2em 0;
 	}
 
-	.image.centered img {
-		margin: 0 auto;
-		width: auto;
-		max-width: 100%;
-	}
+		.image.centered img {
+			margin: 0 auto;
+			width: auto;
+		}
+
 
 
 /* Button */
