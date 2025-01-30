@@ -1614,30 +1614,54 @@ input, select, textarea {
 	article:last-child {
 		margin-bottom: 0;
 	}
+
+/* Image */
+
+
 	.image {
-		display: inline-block;
+		display: block;
 		position: relative;
+		max-width: 100%;
+		text-align: center; /* Ensures centering */
 	}
-	
+
 	.image img {
 		display: block;
-		width: 100%;
+		max-width: 100%;
 		height: auto;
-		max-width: 100%; /* Ensures it doesn't exceed its container */
-	}
-	
-	.image.fit img {
-		width: 100%;
-		height: auto;
-		max-width: 500px; /* Adjust for a balance between desktop & mobile */
-		display: block;
 		margin: 0 auto;
 	}
-	
+
 	.image.fit img {
-		object-fit: cover; /* Change to 'cover' if you want cropping */
+		width: auto;
+		max-width: 100%;
+		height: auto;
+		object-fit: contain; /* Ensures entire image is visible */
 	}
-	
+
+	.image.featured {
+		display: block;
+		width: 100%;
+		margin: 0 0 2em 0;
+	}
+
+	.image.left {
+		float: left;
+		margin: 0 2em 2em 0;
+	}
+
+	.image.centered {
+		display: block;
+		text-align: center; /* Centers the image inside the div */
+	}
+
+	.image.centered img {
+		margin: 0 auto;
+		width: auto;
+		max-width: 100%;
+	}
+
+
 /* Button */
 
 	input[type="button"],
