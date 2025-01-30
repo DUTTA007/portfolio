@@ -1635,7 +1635,7 @@ input, select, textarea {
 	}
 	
 	.image.fit img {
-		object-fit: contain; /* Change to 'cover' if you want cropping */
+		object-fit: cover; /* Change to 'cover' if you want cropping */
 	}
 	
 /* Button */
