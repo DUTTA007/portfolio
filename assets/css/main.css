@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
 @import url("fontawesome-all.min.css");
 
-/*
-	Miniport by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -1619,53 +1614,30 @@ input, select, textarea {
 	article:last-child {
 		margin-bottom: 0;
 	}
-
-/* Image */
-
 	.image {
 		display: inline-block;
 		position: relative;
 	}
-
-		.image img {
-			display: block;
-			width: 100%;
-		}
-
-		.image.fit img {
-			width: 100%;
-			height: auto;
-			max-width: 300px; /* Adjust this based on your desired size */
-			display: block;
-			margin: 0 auto;
-		}
-
-		.image.fit img {
-			object-fit: cover;
-		}
-		
-
-		.image.featured {
-			display: block;
-			width: 100%;
-			margin: 0 0 2em 0;
-		}
-
-		.image.left {
-			float: left;
-			margin: 0 2em 2em 0;
-		}
-
-		.image.centered {
-			display: block;
-			margin: 0 0 2em 0;
-		}
-
-			.image.centered img {
-				margin: 0 auto;
-				width: auto;
-			}
-
+	
+	.image img {
+		display: block;
+		width: 100%;
+		height: auto;
+		max-width: 100%; /* Ensures it doesn't exceed its container */
+	}
+	
+	.image.fit img {
+		width: 100%;
+		height: auto;
+		max-width: 500px; /* Adjust for a balance between desktop & mobile */
+		display: block;
+		margin: 0 auto;
+	}
+	
+	.image.fit img {
+		object-fit: contain; /* Change to 'cover' if you want cropping */
+	}
+	
 /* Button */
 
 	input[type="button"],
